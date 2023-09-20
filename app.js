@@ -1,3 +1,7 @@
+// NEcesitamos tener la consola abierta solo para ver el menu 
+// que se imprime cuando se está realizando el pedido
+
+
 // Primero necesito un array de objetos para el menu de comidas
 
 const menuComidas = [
@@ -65,6 +69,7 @@ function tomarPedido() {
         return;
     }
 
+    // Voy imprimiendo el menú por consola para saber cuales son los IDs existentes
     console.log(`-- Menú de ${categoria} --`);
     for (let i = 0; i < menuSeleccionado.length; i++) {
         const item = menuSeleccionado[i];
@@ -85,6 +90,8 @@ function tomarPedido() {
     // Buscar el elemento en el menú
     let elementoMenu;
 
+    // Como transformo estos tres for en una funcion para no repetir el código?
+    // Tarea para la próxima preentrega
     if (categoria === "comidas") {
         for (let i = 0; i < menuComidas.length; i++) {
             const item = menuComidas[i];
